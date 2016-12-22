@@ -37,10 +37,11 @@ Releases
 Install
 -------
 
-    > install.packages(c("caret", "corrplot", "data.table")) # dependencies
+    > install.packages(c("corrplot", "data.table", "doMC")) # dependencies
     > install.packages("testthat") # if you want to test the package
     > install.packages("devtools") # to install from GitHub
     > library(devtools)
+    > install_version(package='caret',version='6.0-52') # see "Caret version for RRegrs section "below for clarifications
     > install_github("enanomapper/RRegrs", subdir="RRegrs")
 
 If you have errors you should try two extra parameters for *install.packages* such as *dependencies=TRUE,repos='http://cran.us.r-project.org'*.
