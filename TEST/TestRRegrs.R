@@ -30,4 +30,10 @@ library(doMC)
 
 # noCores = CPU cores: 0 = all CPU cores, 1 = no parallel, >1 = specific cores
 
-RRegrsResults = RRegrs(DataFileName="ds.House.csv",noCores=0,iSplitTimes=2,noYrand=2)
+
+####################################
+
+# Performs LM and RF (Linear Regression and Random Forest)
+RRegrsResults = RRegrs(DataFileName="ds.House.csv",noCores=4,iSplitTimes=0,noYrand=0,
+                       fLM="T",fGLM="F",fPLS="F",fLASSO="F",fSVRM="F",fNN="F",fRF="T", 
+                       fRFRFE="F",fSVMRFE="F",fENET="F",trainFrac=0.8)
