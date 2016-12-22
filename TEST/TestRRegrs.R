@@ -4,7 +4,7 @@
 
 # Libraries and external custom functions
 library(RRegrs)                 # load the RRegrs functions
-library(doMC)
+library(doMC)                   # load the doMC functions to enable multi-core processing
 
 # if you downloaded a source distribution, you can also use the version in the package:
 #library(data.table)
