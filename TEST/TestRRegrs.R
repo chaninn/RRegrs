@@ -4,6 +4,7 @@
 
 # Libraries and external custom functions
 library(RRegrs)                 # load the RRegrs functions
+library(doMC)
 
 # if you downloaded a source distribution, you can also use the version in the package:
 #library(data.table)
